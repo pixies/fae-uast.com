@@ -1,0 +1,20 @@
+
+header .intro-text .name {
+    font-size: 3.2em;
+}
+
+header .intro-text .skills {
+    font-size: 3em;
+}
+
+header {
+    text-align: center;
+    color: #FFF;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0);
+
+ }
+
+ header {
+    text-align: center;
+    color: #2C3E50;
+}
