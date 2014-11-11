@@ -1,3 +1,4 @@
+@charset "UFT-8"
 /*!
  * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -20,9 +21,9 @@ a,
 a:hover,
 a:focus,
 a:active,
-a.active {
+a.activ {
     outline: 0;
-    color: #18bc9c;
+    color: #ffffff;
 }
 
 h1,
@@ -63,7 +64,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #2c3e50;
 }
 
 hr.star-primary {
@@ -81,8 +82,8 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
-    background: #18bc9c;
+    color: #2c3e50;
+    background: #fff;
 }
 
 header .container {
@@ -115,7 +116,8 @@ header .intro-text .skills {
     }
 
     header .intro-text .name {
-        font-size: 4.75em;
+        font-size: 2.75em;
+        padding: .5em;
     }
 
     header .intro-text .skills {
@@ -133,10 +135,12 @@ header .intro-text .skills {
 
     .navbar-fixed-top .navbar-brand {
         font-size: 2em;
+        color: #fff;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
     }
+
 
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
@@ -155,20 +159,41 @@ header .intro-text .skills {
 
 .navbar a:focus {
     outline: 0;
+    color: #fff;
 }
+
+.navbar a.navbar-brand:hover {
+    outline: 0;
+    color: #fff;
+    text-decoration: underline;
+}
+
 
 .navbar .navbar-nav {
     letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.navbar .navbar-nav li a:hover {
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .navbar .navbar-nav li a:focus {
     outline: 0;
+    color: #ffffff;
 }
 
 .navbar-default,
 .navbar-inverse {
     border: 0;
 }
+
+.navbar-header a:hover {
+    color: #fff;
+}
+
 
 section {
     padding: 100px 0;
@@ -181,7 +206,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #2c3e50;
 }
 
 @media(max-width:767px) {
@@ -194,7 +219,7 @@ section.success {
     }
 }
 
-#portfolio .portfolio-item {
+/*#portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
 }
@@ -211,7 +236,7 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: rgba(42,64,80,.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -250,7 +275,7 @@ section.success {
         margin: 0 0 30px;
     }
 }
-
+*/
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
@@ -442,4 +467,33 @@ footer .footer-below {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+
+.centered {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+    text-indent: 3.125em;
+}
+
+.newfontsize {
+    font-size: 1.25em;
+    margin-bottom: -2%;
+    list-style: circle;
+}
+
+.newfontsizeone {
+    font-size: 1.25em;
+    list-style: circle;
+}
+.newfontsizetwo {
+    font-size: 1.32em;
+    list-style: circle;
+}
+
+.space {
+    padding-bottom: 5%;
 }
