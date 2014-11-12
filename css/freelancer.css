@@ -486,6 +486,7 @@ border-color: #2c3e50;
     text-align: center;
 }
 
+/* List */
 .justify {
     text-align: justify;
     text-indent: 3.125em;
@@ -508,4 +509,11 @@ border-color: #2c3e50;
 
 .space {
     padding-bottom: 5%;
+}
+
+/*table*/
+
+.upper {
+    text-transform: uppercase;
+    font-weight: bolder;
 }
