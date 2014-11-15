@@ -168,6 +168,12 @@ header .intro-text .skills {
     text-decoration: underline;
 }
 
+.navbar a.navbar-brand:active {
+    outline: 0;
+    color: #fff;
+    text-decoration: underline;
+}
+
 
 .navbar .navbar-nav {
     letter-spacing: 1px;
@@ -283,7 +289,6 @@ section.success {
     font-size: 20px;
     color: #fff;
     background: 0 0;
-    color: #fff;
     transition: all .3s ease-in-out;
 }
 
@@ -353,6 +358,93 @@ form .row:first-child .floating-label-form-group {
     border-top: 1px solid #eee;
 }
 
+.btn2 {
+    color: #fff;
+    background-color: #2c3e50;
+    border-color: #ffffff;
+}
+
+.btn2:focus,
+.btn2:active,
+.btn2.active {
+    outline: 0;
+    background-color: #233140;
+    color: #ffffff;
+
+}
+
+.btn2-success {
+color: #ffffff;
+background-color: #2c3e50;
+border-color: #ffffff;
+}
+
+.btn-success2:hover {
+    background-color: #233140;
+    color: #ffffff;
+}
+
+
+.floating-label-form-group2 {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eee;
+    color: #2c3e50;
+}
+
+.floating-label-form-group2 input,
+.floating-label-form-group2 textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+}
+
+.floating-label-form-group2 label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: .85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
+
+.floating-label-form-group2::not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eee;
+}
+
+.floating-label-form-group-with-value2 label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus2 label {
+    color: #2c3e50;
+}
+
+form .row:first-child .floating-label-form-group2 {
+    border-top: 1px solid #eee;
+}
+
+
+
+
 footer {
     color: #fff;
 }
@@ -363,7 +455,8 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #2c3e50;
+    background-color: #fff;
+    color: #2c3e50;
 }
 
 footer .footer-col {
@@ -372,7 +465,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: #233140;    
 }
 
 .btn-social {
@@ -525,4 +618,5 @@ border-color: #ffffff;
 
 .logos {
     border-radius: 10%;
+    border: 1px solid #2c3e50; 
 }

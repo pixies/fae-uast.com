@@ -26,6 +26,16 @@ $(function() {
     });
 });
 
+$(function() {
+    $("body").on("input propertychange", ".floating-label-form-group2", function(e) {
+        $(this).toggleClass("floating-label-form-group-with-value2", !! $(e.target).val());
+    }).on("focus", ".floating-label-form-group2", function() {
+        $(this).addClass("floating-label-form-group-with-focus2");
+    }).on("blur", ".floating-label-form-group2", function() {
+        $(this).removeClass("floating-label-form-group-with-focus2");
+    });
+});
+
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'

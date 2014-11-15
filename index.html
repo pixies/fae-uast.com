@@ -201,49 +201,49 @@
                                  <tr>
                                     <td>Abertura</td>
                                     <td>05/Dez</td>
-                                    <td>13:00h</td>
+                                    <td class="centered">13:00h</td>
                                     <td>Prof. Leonardo Ferreira</td>
                                 </tr>
 
                                 <tr>
                                     <td>Recepção dos expositores da Mostra de PN</td>
                                     <td>05/Dez</td>
-                                    <td>13:30h</td>
+                                    <td class="centered">13:30h</td>
                                     <td>Prof. Walber Baptista</td>
                                 </tr>
 
                                 <tr>
                                     <td>Apresentação - MOSTRA 01</td>
                                     <td>05/Dez</td>
-                                    <td>14:00h</td>
+                                    <td class="centered">14:00h</td>
                                     <td>Prof. Roberto Cássio</td>
                                 </tr>
 
                                 <tr>
                                     <td>Apresentação - MOSTRA 02</td>
                                     <td>05/Dez</td>
-                                    <td>15:00h</td>
+                                    <td class="centered">15:00h</td>
                                     <td>Prof. Luiz Cáudio</td>
                                 </tr> 
 
                                 <tr>
                                     <td>Apresentação - MOSTRA 03</td>
                                     <td>05/Dez</td>
-                                    <td>16:00h</td>
+                                    <td class="centered">16:00h</td>
                                     <td>Prof. Cláudio Júnior</td>
                                 </tr> 
 
                                 <tr>
                                     <td>Apresentação - MOSTRA 04</td>
                                     <td>05/Dez</td>
-                                    <td>17:00h</td>
+                                    <td class="centered">17:00h</td>
                                     <td>Prof. Danúzio Weliton</td>
                                 </tr>
 
                                 <tr>
                                     <td>Encerramento</td>
                                     <td>05/Dez</td>
-                                    <td>18:00h</td>
+                                    <td class="centered">18:00h</td>
                                     <td>Prof. Leonardo Ferreira</td>
                                 </tr>
 
@@ -399,8 +399,48 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    
+                <div class="col-lg-6">
+                    <form name="sentMessage" id="contactForm2" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group2 col-xs-12 floating-label-form-group2 controls">
+                                <label>Nome</label>
+                                <input type="text" class="form-control" placeholder="Nome" id="name1" required data-validation-required-message="Por favor, escreva o seu nome.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group2 col-xs-12 floating-label-form-group2 controls">
+                                <label>Endereço</label>
+                                <input type="text" class="form-control" placeholder="Endereço" id="endereco" required data-validation-required-message="Por favor, escreva o seu endereço.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group2 col-xs-12 floating-label-form-group2 controls">
+                                <label>Curso</label>
+                                <input type="text" class="form-control" placeholder="Curso" id="curso" required data-validation-required-message="Por favor, escreva o nome do seu curso.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group2 col-xs-12 floating-label-form-group2 controls">
+                                <label>Equipe</label>
+                                <textarea rows="5" class="form-control" placeholder="Equipe" id="equipe" required data-validation-required-message="Por favor, escreva os nomes dos integrantes da equipe."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success2"></div>
+                        <div class="row">
+                            <div class="form-group2 col-xs-12">
+                                            <form name="form" method="post" action="mail/upload.php" enctype="multipart/form-data" >
+                                         <p>Escolha o arquivo:</p> <input class="btn2 btn-success2 btn-lg"type="file" name="arquivo" size="20"/><br/>
+                                            <button type="submit" class="btn2 btn-success2 btn-lg">Enviar anexos</button>
+                                            </form>
+                            </div>
+                            <button type="submit" class="btn2 btn-success2 btn-lg">Enviar</button>
+                        </div>
+                    </form>                    
                 </div>
             </div>
         </div>
@@ -430,21 +470,21 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>E-mail</label>
-                                <input type="email" class="form-control" placeholder="E-mail" id="email" required data-validation-required-message="Por favor escreva o seu e-mail.">
+                                <input type="email" class="form-control" placeholder="E-mail" id="email" required data-validation-required-message="Por favor, escreva o seu e-mail.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Telefone</label>
-                                <input type="tel" class="form-control" placeholder="Telefone" id="phone" required data-validation-required-message="Por favor escreva o número do seu telefone.">
+                                <input type="tel" class="form-control" placeholder="Telefone" id="phone" required data-validation-required-message="Por favor, escreva o número do seu telefone.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Mensagem</label>
-                                <textarea rows="5" class="form-control" placeholder="Mensagem" id="message" required data-validation-required-message="Por favor escreva uma mensagem."></textarea>
+                                <textarea rows="5" class="form-control" placeholder="Mensagem" id="message" required data-validation-required-message="Por favor, escreva uma mensagem."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -500,7 +540,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; FAE UAST 2014
+                        Todos os direitos reservados &copy; UFRPE UAST 2014
                     </div>
                 </div>
             </div>
@@ -752,6 +792,7 @@
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+    <script src="js/contact_me2.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
