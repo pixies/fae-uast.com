@@ -390,7 +390,7 @@
     </section>
 
      <!-- Inscrição Section -->
-    <section id="inscricao">
+  <section id="inscricao">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -400,32 +400,55 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <form name="sentMessage" id="contactForm2" novalidate>
+                    <form name="inscricao" method="POST" enctype="multipart/form-data" id="contactForm2" novalidate action="inscricoes/enviar.php">
                         <div class="row control-group">
                             <div class="form-group2 col-xs-12 floating-label-form-group2 controls">
                                 <label>Nome</label>
-                                <input type="text" class="form-control" placeholder="Nome" id="name1" required data-validation-required-message="Por favor, escreva o seu nome.">
+                                <input type="text" class="form-control" placeholder="Nome" id="name1" required data-validation-required-message="Por favor, escreva o seu nome." name="nome">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group2 col-xs-12 floating-label-form-group2 controls">
-                                <label>Endereço</label>
-                                <input type="text" class="form-control" placeholder="Endereço" id="endereco" required data-validation-required-message="Por favor, escreva o seu endereço.">
+                                <label>E-mail</label>
+                                <input type="text" class="form-control" placeholder="Endereço" id="endereco" required data-validation-required-message="Por favor, escreva o seu endereço." name="email">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group2 col-xs-12 floating-label-form-group2 controls">
+                                <label>Cidade</label>
+                                <input type="text" class="form-control" placeholder="Cidade" id="cidade" required data-validation-required-message="Qual cidade você mora." name="cidade">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group2 col-xs-12 floating-label-form-group2 controls">
                                 <label>Curso</label>
-                                <input type="text" class="form-control" placeholder="Curso" id="curso" required data-validation-required-message="Por favor, escreva o nome do seu curso.">
+                                <input type="text" class="form-control" placeholder="Curso" id="curso" required data-validation-required-message="Por favor, escreva o nome do seu curso." name="curso">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        
+
+                        <div class="row control-group">
+                            <div class="form-group2 col-xs-12 floating-label-form-group2 controls">
+                                <label>Plano de Negócios</label>
+                                <input type="text" class="form-control" placeholder="Plano de Negócios" id="pnegocios" required data-validation-required-message="Qual o titulo do seu Plano de Negocios?" name="pnegocios" name="pnegocios">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group2 col-xs-12 floating-label-form-group2 controls">
+                                <label>Áreas de atuação</label>
+                                <input type="text" class="form-control" placeholder="Área de Atuação" id="aatuacao" required data-validation-required-message="Qual a área de atuação do seu plano de negócios." name="aatuacao" name="aatuacao">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group2 col-xs-12 floating-label-form-group2 controls">
                                 <label>Equipe</label>
-                                <textarea rows="5" class="form-control" placeholder="Equipe" id="equipe" required data-validation-required-message="Por favor, escreva os nomes dos integrantes da equipe."></textarea>
+                                <textarea rows="5" class="form-control" placeholder="Equipe" id="equipe" required data-validation-required-message="Por favor, escreva os nomes dos integrantes da equipe, um por linha." name="equipe"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -433,10 +456,9 @@
                         <div id="success2"></div>
                         <div class="row">
                             <div class="form-group2 col-xs-12">
-                                            <form name="form" method="post" action="mail/upload.php" enctype="multipart/form-data" >
-                                         <p>Escolha o arquivo:</p> <input class="btn2 btn-success2 btn-lg"type="file" name="arquivo" size="20"/><br/>
-                                            <button type="submit" class="btn2 btn-success2 btn-lg">Enviar anexos</button>
-                                            </form>
+ <!-- <form name="form" method="post" action="mail/upload.php" enctype="multipart/form-data" > -->
+                               <label>Documentos Necessários</label>
+                               <input class="btn2 btn-success2 btn-lg"type="file" name="arquivo" size="20"/><br/>
                             </div>
                             <button type="submit" class="btn2 btn-success2 btn-lg">Enviar</button>
                         </div>
@@ -445,6 +467,8 @@
             </div>
         </div>
     </section>
+</body> 
+</html>
 
     <!-- Contact Section -->
     <section  class="success" id="contact">
